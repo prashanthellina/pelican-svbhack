@@ -4,11 +4,13 @@
 @light-grey:  #eeeeee;
 @med-grey:  #999999;
 @dark-grey:  #4d4d4d;
+@very-dark-grey: #3a3a3a;
 @blue:  #0e94ec;
 @accent:  @blue;
-@sans: 'PT Sans', sans-serif;
-@serif: 'PT Serif', serif;
-@mono: 'PT Mono', monospace;
+@pre-accent: @med-grey;
+@sans: 'jaf-bernino-sans', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+@serif: 'Lucida Serif', serif;
+@mono: 'Lucida Mono', monospace;
 
 body {
   margin: 0;
@@ -114,11 +116,11 @@ main {
       pre {
         margin: 22px 2px 22px 2px;
         padding: 2px;
-        color: @black;
-        border-left: 3px solid @accent;
+        color: @light-grey;
+        border-left: 3px solid @pre-accent;
         font-size: 14px;
         font-family: @mono;
-        background: @light-grey;
+        background: @very-dark-grey;
         line-height: 1.125em;
         overflow-x: auto;
       }
@@ -188,7 +190,7 @@ main {
     }
 
     div#user_meta {
-      max-width: 192px;
+      max-width: 240px;
       text-align: right;
 
       ul {
