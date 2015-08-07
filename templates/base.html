@@ -88,5 +88,10 @@
     </div>
   </main>
   {% include "modules/idl.html" %}
+
+  {% if IS_DEVELOPMENT_VERSION %}
+    <script type="text/javascript" src="{{ SITEURL }}/theme/static/js/live.js"></script>
+  {% endif %}
+
 </body>
 </html>
